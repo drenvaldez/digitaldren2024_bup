@@ -53,28 +53,28 @@
         
     `;
 
-    const contentContainer = document.createElement('div');
-    contentContainer.id = 'content-container';
-    contentContainer.style.display = 'none';
-    contentContainer.innerHTML = `
-        <small>⬇ ADVERTISEMENT ⬇</small><br>
-        <a id="link" href="#" target="_blank">
-            <img id="embedded-img" src="" alt="Embedded content" style="display: none; margin: 0 auto;">
-            <video id="embedded-video" controls style="display: none; margin: 0 auto;">
-                <source id="video-source" src="">
-                Your browser does not support the video tag.
-            </video>
-            <iframe id="embedded-yt-video" frameborder="0" allowfullscreen style="display: none; margin: 0 auto;"></iframe>
-            <div id="embedded-text" style="display: none; margin: 0 auto;"></div>
-        </a>
-    `;
+    // const contentContainer = document.createElement('div');
+    // contentContainer.id = 'content-container';
+    // contentContainer.style.display = 'none';
+    // contentContainer.innerHTML = `
+    //     <small>⬇ ADVERTISEMENT ⬇</small><br>
+    //     <a id="link" href="#" target="_blank">
+    //         <img id="embedded-img" src="" alt="Embedded content" style="display: none; margin: 0 auto;">
+    //         <video id="embedded-video" controls style="display: none; margin: 0 auto;">
+    //             <source id="video-source" src="">
+    //             Your browser does not support the video tag.
+    //         </video>
+    //         <iframe id="embedded-yt-video" frameborder="0" allowfullscreen style="display: none; margin: 0 auto;"></iframe>
+    //         <div id="embedded-text" style="display: none; margin: 0 auto;"></div>
+    //     </a>
+    // `;
 
-    const parentContainer = document.getElementById('parent-container');
-    parentContainer.appendChild(formContainer);
-    parentContainer.appendChild(contentContainer);
-    const urlParams = new URLSearchParams(window.location.search);
-    const imgurl = urlParams.get('mdurl');
-    const affurl = urlParams.get('affurl');
+    // const parentContainer = document.getElementById('parent-container');
+    // parentContainer.appendChild(formContainer);
+    // parentContainer.appendChild(contentContainer);
+    // const urlParams = new URLSearchParams(window.location.search);
+    // const imgurl = urlParams.get('mdurl');
+    // const affurl = urlParams.get('affurl');
 
     // if (!imgurl || !affurl) {
     //     document.getElementById('form-container').style.display = 'block'; 
