@@ -2,8 +2,9 @@
     $('[data-toggle="tooltip"]').tooltip()
     console.log("1");
   })
-  $( document ).ready(function() {
+  //$( document ).ready(function() {
   // document.addEventListener("DOMContentLoaded", function() {
+  function insertDiv() {
     console.log("2");
     const formContainer = document.createElement('div');
     formContainer.id = 'form-container';
@@ -127,4 +128,4 @@
             alert('Copied URL to clipboard!');
         });        
     });
-});
+};
