@@ -1,4 +1,3 @@
-<script>
 // createDiv.js
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -16,4 +15,3 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.appendChild(newDiv);
 });
   
-</script>
