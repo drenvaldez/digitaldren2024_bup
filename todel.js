@@ -1,9 +1,9 @@
-<script>
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
     console.log("1");
   })
-  document.addEventListener("DOMContentLoaded", function() {
+  $( document ).ready(function() {
+  // document.addEventListener("DOMContentLoaded", function() {
     console.log("2");
     const formContainer = document.createElement('div');
     formContainer.id = 'form-container';
@@ -126,4 +126,3 @@
         });        
     });
 });
-</script>
