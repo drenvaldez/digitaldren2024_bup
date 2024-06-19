@@ -76,33 +76,33 @@
     const imgurl = urlParams.get('mdurl');
     const affurl = urlParams.get('affurl');
 
-    if (!imgurl || !affurl) {
-        document.getElementById('form-container').style.display = 'block'; 
-    } else {
-        const link = document.getElementById('link');
-        link.href = affurl;
+    // if (!imgurl || !affurl) {
+    //     document.getElementById('form-container').style.display = 'block'; 
+    // } else {
+    //     const link = document.getElementById('link');
+    //     link.href = affurl;
 
-        if (imgurl.match(/\.(jpeg|jpg|gif|png)$/) != null || imgurl.includes('https://drive.google.com/thumbnail')) {
-            const img = document.getElementById('embedded-img');
-            img.src = imgurl;
-            img.style.display = 'block'; 
-        } else if (imgurl.match(/\.(mp4|webm|ogg)$/) != null) {
-            const video = document.getElementById('embedded-video');
-            document.getElementById('video-source').src = imgurl;
-            video.style.display = 'block'; 
-        } else if (imgurl.match(/youtube\.com\/watch\?v=([^&]+)/) || imgurl.match(/youtu\.be\/([^&]+)/)) {
-            const video_ = document.getElementById('embedded-yt-video');
-            const videoId = imgurl.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/)[1];
-            video_.src = `https://www.youtube.com/embed/${videoId}`;
-            video_.style.display = 'block';            
-        } else {
-            const textDiv = document.getElementById('embedded-text');
-            textDiv.textContent = imgurl;
-            textDiv.style.display = 'block';
-        }
+    //     if (imgurl.match(/\.(jpeg|jpg|gif|png)$/) != null || imgurl.includes('https://drive.google.com/thumbnail')) {
+    //         const img = document.getElementById('embedded-img');
+    //         img.src = imgurl;
+    //         img.style.display = 'block'; 
+    //     } else if (imgurl.match(/\.(mp4|webm|ogg)$/) != null) {
+    //         const video = document.getElementById('embedded-video');
+    //         document.getElementById('video-source').src = imgurl;
+    //         video.style.display = 'block'; 
+    //     } else if (imgurl.match(/youtube\.com\/watch\?v=([^&]+)/) || imgurl.match(/youtu\.be\/([^&]+)/)) {
+    //         const video_ = document.getElementById('embedded-yt-video');
+    //         const videoId = imgurl.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/)[1];
+    //         video_.src = `https://www.youtube.com/embed/${videoId}`;
+    //         video_.style.display = 'block';            
+    //     } else {
+    //         const textDiv = document.getElementById('embedded-text');
+    //         textDiv.textContent = imgurl;
+    //         textDiv.style.display = 'block';
+    //     }
 
-        contentContainer.style.display = 'block';
-    }
+    //     contentContainer.style.display = 'block';
+    // }
 
     // document.getElementById('urlForm').addEventListener('submit', function(event) {
     //     event.preventDefault();
