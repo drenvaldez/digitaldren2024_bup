@@ -1,11 +1,8 @@
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-    console.log("1");
   })
-  //$( document ).ready(function() {
-  // document.addEventListener("DOMContentLoaded", function() {
+
   function insertDiv() {
-    console.log("2");
     const formContainer = document.createElement('div');
     formContainer.id = 'form-container';
     formContainer.style.display = 'none';
@@ -70,11 +67,9 @@
         </a>
     `;
 
-    // const parentContainer = document.getElementById('parent-container');
-    // parentContainer.appendChild(formContainer);
-    // parentContainer.appendChild(contentContainer);
-    document.body.appendChild(formContainer);
-    document.body.appendChild(contentContainer);
+    const parentContainer = document.getElementById('parent-container');
+    parentContainer.appendChild(formContainer);
+    parentContainer.appendChild(contentContainer);
     const urlParams = new URLSearchParams(window.location.search);
     const imgurl = urlParams.get('mdurl');
     const affurl = urlParams.get('affurl');
