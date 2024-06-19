@@ -104,26 +104,26 @@
         contentContainer.style.display = 'block';
     }
 
-    document.getElementById('urlForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const imgurlInput = document.getElementById('imgurl').value;
-        const affurlInput = document.getElementById('affurl').value;
-        const newUrl = `?mdurl=${encodeURIComponent(imgurlInput)}&affurl=${encodeURIComponent(affurlInput)}`;
-        const urlDisplayInput = document.getElementById('urlDisplay');
-        // const fullUrl = window.location.origin + window.location.pathname + newUrl;
-        urlDisplayInput.value = fullUrl; 
-        const urlDisplayWrapper = document.getElementById('urlDisplayWrapper');
-        urlDisplayWrapper.style.display = 'block'; 
+    // document.getElementById('urlForm').addEventListener('submit', function(event) {
+    //     event.preventDefault();
+    //     const imgurlInput = document.getElementById('imgurl').value;
+    //     const affurlInput = document.getElementById('affurl').value;
+    //     const newUrl = `?mdurl=${encodeURIComponent(imgurlInput)}&affurl=${encodeURIComponent(affurlInput)}`;
+    //     const urlDisplayInput = document.getElementById('urlDisplay');
+    //     // const fullUrl = window.location.origin + window.location.pathname + newUrl;
+    //     urlDisplayInput.value = fullUrl; 
+    //     const urlDisplayWrapper = document.getElementById('urlDisplayWrapper');
+    //     urlDisplayWrapper.style.display = 'block'; 
     
-        const copyButton = document.getElementById('copyButton');
-        copyButton.style.display = 'inline-block'; 
+    //     const copyButton = document.getElementById('copyButton');
+    //     copyButton.style.display = 'inline-block'; 
     
-        copyButton.addEventListener('click', function() {
-            urlDisplayInput.select();
-            urlDisplayInput.setSelectionRange(0, 99999); 
-            document.execCommand('copy');
-            alert('Copied URL to clipboard!');
-        });        
-    });
+    //     copyButton.addEventListener('click', function() {
+    //         urlDisplayInput.select();
+    //         urlDisplayInput.setSelectionRange(0, 99999); 
+    //         document.execCommand('copy');
+    //         alert('Copied URL to clipboard!');
+    //     });        
+    // });
 });
 </script>
