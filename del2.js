@@ -73,7 +73,7 @@ $(function () {
         let blacklistedDomains = [];
         async function fetchBlacklistedDomains() {
             try {
-                const response = await fetch('blacklistedDomains.json');
+                const response = await fetch('https://cdn.jsdelivr.net/gh/drenvaldez/digitaldren2024_bup/json/blcklst.json');
                 const data = await response.json();
                 blacklistedDomains = data.blacklistedDomains;
             } catch (error) {
