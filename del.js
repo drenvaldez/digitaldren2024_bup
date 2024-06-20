@@ -102,7 +102,7 @@ $(function () {
         }
 
         async function checkUrl(imgurl, affurl) {
-            let isBlacklisted = await checkDomain(imgurl);
+            let isBlacklisted = await checkDomain(affurl);
 
             if (!isBlacklisted) {
                 const link = document.getElementById('link');
