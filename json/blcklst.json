@@ -1,0 +1,7 @@
+{
+    "blacklistedDomains": [
+        "example.com",
+        "malicious.com",
+        "phishing.com"
+    ]
+}
