@@ -57,7 +57,7 @@ $(function () {
             <iframe id="embedded-yt-video" frameborder="0" allowfullscreen style="display: none; margin: 0 auto;"></iframe>
             <div id="embedded-text" style="display: none; margin: 0 auto;"></div>
         </a>
-        <div style="margin-top: 2;"><a href="#" id="reportAdLink" target="_blank">Report this ad</a></div>
+        <div class="mt-1"><a href="#" id="reportAdLink" target="_blank">Report this ad</a></div>
     `;
 
     const parentContainer = document.getElementById('parent-container');
