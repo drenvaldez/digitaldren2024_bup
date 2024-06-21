@@ -56,7 +56,12 @@ $(function () {
             </video>
             <iframe id="embedded-yt-video" frameborder="0" allowfullscreen style="display: none; margin: 0 auto;"></iframe>
             <div id="embedded-text" style="display: none; margin: 0 auto;"></div>
-        </a>
+        </a><br>
+        <a href="#" id="reportAdLink">Report this ad</a>
+        <div id="dialogOverlay"></div>
+        <div id="reportAdDialog">
+          <iframe id="reportAdIframe" width="640" height="1057" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
     `;
 
     const parentContainer = document.getElementById('parent-container');
@@ -157,4 +162,21 @@ $(function () {
             alert('Copied URL to clipboard!');
         });        
     });
+
+    // JavaScript to handle the click event
+    document.getElementById('reportAdLink').addEventListener('click', function(e) {
+        e.preventDefault();
+        var currentPageUrl = encodeURIComponent(window.location.href);
+        var googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSedhTI-Nv9D92Xo9KHV79gWY9G7XDxCMMH0p1SBwkl5s4kXAw/viewform?usp=pp_url&entry.453278220=" + currentPageUrl;
+        document.getElementById('reportAdIframe').src = googleFormUrl;
+        
+        document.getElementById('dialogOverlay').style.display = 'block';
+        document.getElementById('reportAdDialog').style.display = 'block';
+    });
+
+    // Close the dialog when clicking outside of it
+    document.getElementById('dialogOverlay').addEventListener('click', function() {
+        document.getElementById('dialogOverlay').style.display = 'none';
+        document.getElementById('reportAdDialog').style.display = 'none';
+    });      
 };
