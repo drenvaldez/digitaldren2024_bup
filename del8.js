@@ -9,9 +9,9 @@ $(function () {
     formContainer.innerHTML = `
         <small>⬇ ADVERTISE HERE ⬇</small>
         <form id="urlForm">
-            <h5 class="fw-bold mb-3">Share & Shine: Promote Your Banner or Media Here!</h5>
+            <h5 class="font-weight-bold margin-bottom-3">Share & Shine: Promote Your Banner or Media Here!</h5>
             <label for="imgurl">Image/Text/Video URL
-              <button type="button" class="btn-sm rounded bg-dark text-light py-0" data-toggle="tooltip" data-placement="top" title="For optimal viewing across devices, consider using image sizes like 250x250, 300x300, or 400x400 pixels. These dimensions ensure your images look great on both mobile and desktop screens.">
+              <button type="button" class="button-small rounded-corner background-dark text-light-color padding-y-0" data-toggle="tooltip" data-placement="top" title="For optimal viewing across devices, consider using image sizes like 250x250, 300x300, or 400x400 pixels. These dimensions ensure your images look great on both mobile and desktop screens.">
                 ?
               </button>
                :
@@ -19,18 +19,18 @@ $(function () {
             <input type="text" id="imgurl" name="imgurl">
             <br><br>
             <label for="affurl">Affiliate/Destination URL
-              <button type="button" class="btn-sm rounded bg-dark text-light py-0" data-toggle="tooltip" data-placement="top" title="Your affiliate link, a blog post, or your website URL">
+              <button type="button" class="button-small rounded-corner background-dark text-light-color padding-y-0" data-toggle="tooltip" data-placement="top" title="Your affiliate link, a blog post, or your website URL">
                 ?
               </button>
                :
             </label>
             <input type="text" id="affurl" name="affurl"><br><br>
-            <input class="btn-primary mb-3" type="submit" value="Generate URL"><br>
+            <input class="primary-button margin-bottom-3" type="submit" value="Generate URL"><br>
             <small><em><b>Note</b>: Please ensure your content complies with our terms of service. Examples of prohibited content include Ponzi schemes, adult content, misleading advertisements, cryptocurrencies and any illegal activities.</em></small>
             <br><br>
             <div id="urlDisplayWrapper" style="display: none; margin:0 auto;">
                 <label for="urlDisplay" style="display: inline-block; margin-right: 10px;">Your special link
-                <button type="button" class="btn-sm rounded bg-dark text-light py-0" data-toggle="tooltip" data-placement="top" title="Tip: You can use your favorite URL Shortener(e.g. bitly) to enhance the presentation and trackability of your links.">
+                <button type="button" class="button-small rounded-corner background-dark text-light-color padding-y-0" data-toggle="tooltip" data-placement="top" title="Tip: You can use your favorite URL Shortener(e.g. bitly) to enhance the presentation and trackability of your links.">
                   i
                 </button>
                 :
@@ -38,7 +38,7 @@ $(function () {
                 <input type="text" id="urlDisplay" readonly style="flex: 1; margin-right: 10px;">
                 <button id="copyButton">Copy</button>
             </div>
-            <span class="mb-1" style="font-size:12px;">by DigitalDren</span>
+            <span class="margin-bottom-1" style="font-size:12px;">by DigitalDren</span>
         </form>
         
     `;
@@ -57,7 +57,7 @@ $(function () {
             <iframe id="embedded-yt-video" frameborder="0" allowfullscreen style="display: none; margin: 0 auto;"></iframe>
             <div id="embedded-text" style="display: none; margin: 0 auto;"></div>
         </a>
-        <div class="mt-1"><a href="#" id="reportAdLink" target="_blank">Report this ad</a></div>
+        <div class="margin-top-1"><a href="#" id="reportAdLink" target="_blank">Report this ad</a></div>
     `;
 
     const parentContainer = document.getElementById('parent-container');
