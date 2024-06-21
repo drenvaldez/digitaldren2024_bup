@@ -163,7 +163,7 @@ $(function () {
         e.preventDefault();
         var currentPageUrl = encodeURIComponent(window.location.href);
         var googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSedhTI-Nv9D92Xo9KHV79gWY9G7XDxCMMH0p1SBwkl5s4kXAw/viewform?usp=pp_url&entry.453278220=" + currentPageUrl;
-        // document.getElementById('reportAdLink').href = googleFormUrl;
-        window.open(googleFormUrl '_blank');
+        document.getElementById('reportAdLink').href = googleFormUrl;
+        document.getElementById('reportAdLink').click();
     });
 };
